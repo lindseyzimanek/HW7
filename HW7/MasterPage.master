@@ -4,17 +4,44 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div id="container">
+        <div id="header">
+            <h1>NFL Teams</h1>
+            <h3>Information About the National Football League Teams</h3>
+        </div>
+
+        <div id="right header">
+            <img src="./css/nfl.jpg" height="150px" />
+        </div>
+
+        <div id="menu">
+            <ul id="nav">
+                <li><a href="PAGE">Home</a></li>
+                <li><a href="PAGE">View All Teams</a></li>
+                <li><a href="PAGE">Admin</a></li>
+            </ul>
+        </div>
+
+        <div id="main">
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
     </div>
+
+        <div id="footer">
+            &copy; 2014 Lindsey Zimanek
+        </div>
+        </div>
+
     </form>
 </body>
 </html>
