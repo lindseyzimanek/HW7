@@ -8,10 +8,10 @@ Partial Class TeamDetails
 
         lblDeletedTeam.Text = deletedTeam & " has been deleted from the database."
 
-        Response.AddHeader("REFRESH", "3;URL=~/ViewAllTeams.aspx")
+        Response.AddHeader("REFRESH", "3;URL=./ViewAllTeams.aspx")
     End Sub
 
     Protected Sub FormView1_ItemUpdated(sender As Object, e As FormViewUpdatedEventArgs) Handles FormView1.ItemUpdated
-        Response.AddHeader("REFRESH", "3;URL=~/ViewAllTeams.aspx")
+        Response.Redirect("./EditTeam.aspx")
     End Sub
 End Class
