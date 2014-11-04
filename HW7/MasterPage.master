@@ -14,16 +14,20 @@
 <body>
     <form id="form1" runat="server">
     <div id="container">
+       <div id="top">
         <div id="header">
             <h1>NFL Teams</h1>
             <h3>Information About the National Football League Teams</h3>
         </div>
 
-        <div id="right header">
+        <div id="right_header">
 
             <asp:Image ID="logo" runat="server" Height="150px" ImageUrl="~/css/nfl.jpg" />
-
+            </div>
         </div>
+
+        <br />
+        <br />
 
         <div id="menu">
             <ul id="nav">
@@ -39,7 +43,8 @@
         
         </asp:ContentPlaceHolder>
     </div>
-
+        <br />
+        <br />
         <div id="footer">
             &copy; 2014 Lindsey Zimanek
         </div>
