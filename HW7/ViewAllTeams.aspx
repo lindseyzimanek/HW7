@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="ViewAllTeams.aspx.vb" Inherits="ViewAllTeams" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-
-    <title> NFL Team Facts </title>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">NFL Team Facts-View All Teams
+    
     <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
 
 </asp:Content>

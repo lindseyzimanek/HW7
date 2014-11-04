@@ -9,7 +9,7 @@
     </asp:ContentPlaceHolder>
     </title>
 
-    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/stylesheet.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -20,7 +20,9 @@
         </div>
 
         <div id="right header">
-            <img src="./css/nfl.jpg" height="150px" />
+
+            <asp:Image ID="logo" runat="server" Height="150px" ImageUrl="~/css/nfl.jpg" />
+
         </div>
 
         <div id="menu">
