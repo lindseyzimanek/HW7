@@ -28,7 +28,7 @@
                 <li><a href="./Default.aspx">Home</a></li>
                 <li><a href="./ViewAllTeams.aspx">View All Teams</a></li>
                 <li><a href="./NewTeam.aspx">Add A New Team</a></li>
-                <li><a href="PAGE">Admin</a></li>
+                <li><a href="./login/login.aspx">Admin</a></li>
             </ul>
         </div>
 
