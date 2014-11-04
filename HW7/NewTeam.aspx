@@ -40,83 +40,83 @@
         <InsertItemTemplate>
             <table>
                 <tr>
-                    <td>
-                        Team Name
+                    <td style="text-align:right;">
+                        Team Name:
                     </td>
-                    <td>
+                    <td style="text-align:left;">
                         <asp:TextBox ID="team_nameTextBox" runat="server" Text='<%# Bind("team_name") %>' />
                     </td>
                 </tr>
                   <tr>
-                    <td>
-                        City
+                    <td style="text-align:right;">
+                        City:
                     </td>
-                    <td>
+                    <td style="text-align:left;">
                         <asp:TextBox ID="cityTextBox" runat="server" Text='<%# Bind("city") %>' />
                     </td>
                 </tr>
                   <tr>
-                    <td>
-                        State
+                    <td style="text-align:right;">
+                        State:
                     </td>
-                    <td>
+                    <td style="text-align:left;">
                         <asp:TextBox ID="stateTextBox" runat="server" Text='<%# Bind("state") %>' />
                     </td>
                 </tr>
                   <tr>
-                    <td>
-                        Year Established
+                    <td style="text-align:right;">
+                        Year Established:
                     </td>
-                    <td>
+                    <td style="text-align:left;">
                         <asp:TextBox ID="year_establishedTextBox" runat="server" Text='<%# Bind("year_established") %>' />
                     </td>
                 </tr>
                   <tr>
-                    <td>
-                        Field Name
+                    <td style="text-align:right;">
+                        Field Name:
                     </td>
-                    <td>
+                    <td style="text-align:left;">
                         <asp:TextBox ID="field_nameTextBox" runat="server" Text='<%# Bind("field_name") %>' />
                     </td>
                 </tr>
                   <tr>
-                    <td>
-                        Head Coach
+                    <td style="text-align:right;">
+                        Head Coach:
                     </td>
-                    <td>
+                    <td style="text-align:left;">
                         <asp:TextBox ID="head_coachTextBox" runat="server" Text='<%# Bind("head_coach") %>' />
                     </td>
                 </tr>
                   <tr>
-                    <td>
-                        Team Colors
+                    <td style="text-align:right;">
+                        Team Colors:
                     </td>
-                    <td>
+                    <td style="text-align:left;">
                         <asp:TextBox ID="team_colorsTextBox" runat="server" Text='<%# Bind("team_colors") %>' />
                     </td>
                 </tr>
                  <tr>
-                    <td>
-                        Number of Superbowl Appearances
+                    <td style="text-align:right;">
+                        Superbowl Appearances:
                     </td>
-                    <td>
+                    <td style="text-align:left;">
                         <asp:TextBox ID="superbowl_appearancesTextBox" runat="server" Text='<%# Bind("superbowl_appearances") %>' />
                     </td>
                 </tr>
                  <tr>
-                    <td>
-                        Number of Superbowl Wins
+                    <td style="text-align:right;">
+                        Superbowl Wins:
                     </td>
-                    <td>
+                    <td style="text-align:left;">
                         <asp:TextBox ID="superbowl_winsTextBox" runat="server" Text='<%# Bind("superbowl_wins") %>' />
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <asp:Button ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                    <td style="text-align:right;">
+                        <asp:Button ID="btnInsert" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
                     </td>
-                    <td>
-                        <asp:Button ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                    <td style="text-align:left;">
+                        <asp:Button ID="btnCancel" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
                     </td>
                 </tr>
             </table>
