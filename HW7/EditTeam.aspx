@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="NewTeam.aspx.vb" Inherits="NewTeam" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="EditTeam.aspx.vb" Inherits="EditTeam" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> NFL Teams - New Team
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <p>
@@ -32,13 +32,11 @@
                 <asp:Parameter Name="id" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-    </p>
-    <asp:FormView ID="FormView1" runat="server" DataKeyNames="id" DataSourceID="SqlDataSource1" DefaultMode="Insert" HorizontalAlign="Center">
-        <EditItemTemplate>
-           
-        </EditItemTemplate>
-        <InsertItemTemplate>
-            <table>
+        <br />
+        <asp:FormView ID="FormView1" runat="server" DataKeyNames="id" DataSourceID="SqlDataSource1" DefaultMode="Edit" HorizontalAlign="Center">
+            <EditItemTemplate>
+
+                <table>
                 <tr>
                     <td style="text-align:right;">
                         Team Name:
@@ -113,20 +111,22 @@
                 </tr>
                 <tr>
                     <td style="text-align:right;">
-                        <asp:Button ID="btnInsert" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                         <asp:Button ID="btnUpdate" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
                     </td>
                     <td style="text-align:left;">
-                        <asp:Button ID="btnCancel" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                        <asp:Button ID="btnUpdateCancel" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
                     </td>
                 </tr>
             </table>
-
-        </InsertItemTemplate>
-        <ItemTemplate>   
-                                            
-        </ItemTemplate>
-    </asp:FormView>
-    <br />
-    <br />
+               
+            </EditItemTemplate>
+            <InsertItemTemplate>
+               
+            </InsertItemTemplate>
+            <ItemTemplate>
+               
+            </ItemTemplate>
+        </asp:FormView>
+    </p>
 </asp:Content>
 

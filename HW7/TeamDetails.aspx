@@ -36,71 +36,12 @@
         </UpdateParameters>
     </asp:SqlDataSource>
     <br />
-    <asp:FormView ID="FormView1" runat="server" DataKeyNames="id" DataSourceID="SqlDataSource1">
+    <asp:FormView ID="FormView1" runat="server" DataKeyNames="id" DataSourceID="SqlDataSource1" HorizontalAlign="Center">
         <EditItemTemplate>
-            id:
-            <asp:Label ID="idLabel1" runat="server" Text='<%# Eval("id") %>' />
-            <br />
-            team_name:
-            <asp:TextBox ID="team_nameTextBox" runat="server" Text='<%# Bind("team_name") %>' />
-            <br />
-            city:
-            <asp:TextBox ID="cityTextBox" runat="server" Text='<%# Bind("city") %>' />
-            <br />
-            state:
-            <asp:TextBox ID="stateTextBox" runat="server" Text='<%# Bind("state") %>' />
-            <br />
-            year_established:
-            <asp:TextBox ID="year_establishedTextBox" runat="server" Text='<%# Bind("year_established") %>' />
-            <br />
-            field_name:
-            <asp:TextBox ID="field_nameTextBox" runat="server" Text='<%# Bind("field_name") %>' />
-            <br />
-            head_coach:
-            <asp:TextBox ID="head_coachTextBox" runat="server" Text='<%# Bind("head_coach") %>' />
-            <br />
-            team_colors:
-            <asp:TextBox ID="team_colorsTextBox" runat="server" Text='<%# Bind("team_colors") %>' />
-            <br />
-            superbowl_appearances:
-            <asp:TextBox ID="superbowl_appearancesTextBox" runat="server" Text='<%# Bind("superbowl_appearances") %>' />
-            <br />
-            superbowl_wins:
-            <asp:TextBox ID="superbowl_winsTextBox" runat="server" Text='<%# Bind("superbowl_wins") %>' />
-            <br />
-            <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-            &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+            
         </EditItemTemplate>
         <InsertItemTemplate>
-            team_name:
-            <asp:TextBox ID="team_nameTextBox" runat="server" Text='<%# Bind("team_name") %>' />
-            <br />
-            city:
-            <asp:TextBox ID="cityTextBox" runat="server" Text='<%# Bind("city") %>' />
-            <br />
-            state:
-            <asp:TextBox ID="stateTextBox" runat="server" Text='<%# Bind("state") %>' />
-            <br />
-            year_established:
-            <asp:TextBox ID="year_establishedTextBox" runat="server" Text='<%# Bind("year_established") %>' />
-            <br />
-            field_name:
-            <asp:TextBox ID="field_nameTextBox" runat="server" Text='<%# Bind("field_name") %>' />
-            <br />
-            head_coach:
-            <asp:TextBox ID="head_coachTextBox" runat="server" Text='<%# Bind("head_coach") %>' />
-            <br />
-            team_colors:
-            <asp:TextBox ID="team_colorsTextBox" runat="server" Text='<%# Bind("team_colors") %>' />
-            <br />
-            superbowl_appearances:
-            <asp:TextBox ID="superbowl_appearancesTextBox" runat="server" Text='<%# Bind("superbowl_appearances") %>' />
-            <br />
-            superbowl_wins:
-            <asp:TextBox ID="superbowl_winsTextBox" runat="server" Text='<%# Bind("superbowl_wins") %>' />
-            <br />
-            <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-            &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+           
         </InsertItemTemplate>
         <ItemTemplate>
 
@@ -189,39 +130,7 @@
                     </td>
                 </tr>
             </table>
-            id:
-            <asp:Label ID="idLabel" runat="server" Text='<%# Eval("id") %>' />
-            <br />
-            team_name:
-            
-            <br />
-            city:
-            
-            <br />
-            state:
-            
-            <br />
-            year_established:
-            
-            <br />
-            field_name:
-            
-            <br />
-            head_coach:
-            
-            <br />
-            team_colors:
-            
-            <br />
-            superbowl_appearances:
-            
-            <br />
-            superbowl_wins:
-            
-            <br />
-            
-            &nbsp;
-            &nbsp;
+           
         </ItemTemplate>
     </asp:FormView>
     <br />
