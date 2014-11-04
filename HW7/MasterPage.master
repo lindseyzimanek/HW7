@@ -25,10 +25,10 @@
 
         <div id="menu">
             <ul id="nav">
-                <li><a href="./Default.aspx">Home</a></li>
-                <li><a href="./ViewAllTeams.aspx">View All Teams</a></li>
-                <li><a href="./NewTeam.aspx">Add A New Team</a></li>
-                <li><a href="./login/login.aspx">Admin</a></li>
+                <li><asp:HyperLink ID="link_Home" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+                <li><asp:HyperLink ID="link_ViewAll" runat="server" NavigateUrl="~/ViewAllTeams.aspx">View All Teams</asp:HyperLink></li>                
+                <li><asp:HyperLink ID="link_Admin" runat="server" NavigateUrl="~/admin/Default.aspx">Admin</asp:HyperLink></li>
+                <li><asp:LoginStatus ID="LoginStatus1" runat="server" /></li>
             </ul>
         </div>
 

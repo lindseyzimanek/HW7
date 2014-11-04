@@ -1,6 +1,10 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="TeamDetails.aspx.vb" Inherits="TeamDetails" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> NFL Teams - Details
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+
+    <title> NFL Team Facts </title>
+    <link rel="stylesheet" type="text/css" href="../css/admin_stylesheet.css" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <!-- ADD DETAIL VIEW FORM HERE /-->

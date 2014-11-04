@@ -5,7 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>ASP.NET Role Based Security - Role Manager</title>
-    <link rel="stylesheet" type="text/css" href="~/sitemanager.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="~/sitemanager.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../../css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/admin_stylesheet.css" />
 </head>
 <body>
     <form id="form1" runat="server">

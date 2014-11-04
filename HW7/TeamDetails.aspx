@@ -1,7 +1,12 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="TeamDetails.aspx.vb" Inherits="TeamDetails" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> NFL Teams - Details
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    
+    <title> NFL Team Facts </title>
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <!-- ADD DETAIL VIEW FORM HERE /-->
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbo.lzimanek_hw7_nfl_teams %>" SelectCommand="SELECT * FROM [lzimanek_hw7_nfl_teams] WHERE ([id] = @id)">
