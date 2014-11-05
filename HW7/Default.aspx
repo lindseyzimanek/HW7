@@ -5,6 +5,9 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">   
+    
+    <br />
+    <br />
 
     <asp:image runat="server" ID="teams" Height="300px" ImageUrl="~/css/nfl_teams.jpg" CssClass="center_img"></asp:image>
 

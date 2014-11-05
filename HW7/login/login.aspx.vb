@@ -5,7 +5,7 @@ Partial Class login_login
     Protected Sub Login1_LoggedIn(sender As Object, e As EventArgs) Handles Login1.LoggedIn
 
         If Roles.IsUserInRole(Login1.UserName, "r_lzimanek_Admin") = True Then
-            Response.Redirect("~/admin/ViewAllTeams.aspx")
+            Response.Redirect("~/admin/Default.aspx")
 
         Else : Response.Redirect("~/ViewAllTeams.aspx")
 

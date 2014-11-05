@@ -7,7 +7,7 @@ Partial Class NewTeam
     End Sub
 
     Protected Sub FormView1_ItemInserted(sender As Object, e As FormViewInsertedEventArgs) Handles FormView1.ItemInserted
-        Response.Redirect("~/ViewAllTeams.aspx")
+        Response.Redirect("~/admin/ViewAllTeams.aspx")
     End Sub
 
     

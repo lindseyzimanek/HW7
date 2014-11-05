@@ -3,10 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <p>
+    <div id="login">
         <asp:Login ID="Login1" runat="server">
         </asp:Login>
         <br />
-    </p>
+    </div>
 </asp:Content>
 
