@@ -6,6 +6,12 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+     <ul id="nav">
+        <li><asp:HyperLink ID="link_NewTeam" runat="server" NavigateUrl="~/admin/NewTeam.aspx">Add a New Team</asp:HyperLink></li>                       
+        <li><asp:HyperLink ID="link_ViewAllTeams" runat="server" NavigateUrl="~/admin/ViewAllTeams.aspx">View All Teams</asp:HyperLink></li>                
+    </ul>
+
     <p>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbo.lzimanek_hw7_nfl_teams %>" DeleteCommand="DELETE FROM [lzimanek_hw7_nfl_teams] WHERE [id] = @id" InsertCommand="INSERT INTO [lzimanek_hw7_nfl_teams] ([team_name], [city], [state], [year_established], [field_name], [head_coach], [team_colors], [superbowl_appearances], [superbowl_wins]) VALUES (@team_name, @city, @state, @year_established, @field_name, @head_coach, @team_colors, @superbowl_appearances, @superbowl_wins)" SelectCommand="SELECT * FROM [lzimanek_hw7_nfl_teams]" UpdateCommand="UPDATE [lzimanek_hw7_nfl_teams] SET [team_name] = @team_name, [city] = @city, [state] = @state, [year_established] = @year_established, [field_name] = @field_name, [head_coach] = @head_coach, [team_colors] = @team_colors, [superbowl_appearances] = @superbowl_appearances, [superbowl_wins] = @superbowl_wins WHERE [id] = @id">
             <DeleteParameters>
@@ -127,7 +133,88 @@
                
             </InsertItemTemplate>
             <ItemTemplate>
-               
+                  <table>
+                <tr>
+                    <td style="text-align:right;">
+                        Team Name:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:Label ID="team_nameLabel" runat="server" Text='<%# Bind("team_name") %>' />
+                    </td>
+                </tr>
+                  <tr>
+                    <td style="text-align:right;">
+                        City:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:Label ID="cityLabel" runat="server" Text='<%# Bind("city") %>' />
+                    </td>
+                </tr>
+                  <tr>
+                    <td style="text-align:right;">
+                        State:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:Label ID="stateLabel" runat="server" Text='<%# Bind("state") %>' />
+                    </td>
+                </tr>
+                  <tr>
+                    <td style="text-align:right;">
+                        Year Established:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:Label ID="year_establishedLabel" runat="server" Text='<%# Bind("year_established") %>' />
+                    </td>
+                </tr>
+                  <tr>
+                    <td style="text-align:right;">
+                        Field Name:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:Label ID="field_nameLabel" runat="server" Text='<%# Bind("field_name") %>' />
+                    </td>
+                </tr>
+                  <tr>
+                    <td style="text-align:right;">
+                        Head Coach:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:Label ID="head_coachLabel" runat="server" Text='<%# Bind("head_coach") %>' />
+                    </td>
+                </tr>
+                  <tr>
+                    <td style="text-align:right;">
+                        Team Colors:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:Label ID="team_colorsLabel" runat="server" Text='<%# Bind("team_colors") %>' />
+                    </td>
+                </tr>
+                 <tr>
+                    <td style="text-align:right;">
+                        Superbowl Appearances:
+                    </td>
+                    <td style="text-align:left;">
+                       <asp:Label ID="superbowl_appearancesLabel" runat="server" Text='<%# Bind("superbowl_appearances") %>' />
+                    </td>
+                </tr>
+                 <tr>
+                    <td style="text-align:right;">
+                        Superbowl Wins:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:Label ID="superbowl_winsLabel" runat="server" Text='<%# Bind("superbowl_wins") %>' />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">
+                       <asp:Button ID="btnEdit" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:Button ID="btnDelete" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
+                    </td>                  
+                </tr>
+            </table>
             </ItemTemplate>
         </asp:FormView>
     </p>

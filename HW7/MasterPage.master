@@ -22,13 +22,16 @@
 
         <div id="right_header">
 
-            <asp:Image ID="logo" runat="server" Height="150px" ImageUrl="~/css/nfl.jpg" />
+            <asp:Image ID="logo" runat="server" Height="100px" ImageUrl="~/css/nfl.jpg" />
             </div>
         </div>
 
         <br />
+        <div id="currentTime"
+        <asp:Label ID="currentTimeLabel" runat="server" CssClass="currentTime"></asp:Label>
+        </div>
         <br />
-
+        
         <div id="menu">
             <ul id="nav">
                 <li><asp:HyperLink ID="link_Home" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>

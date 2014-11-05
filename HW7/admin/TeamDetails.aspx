@@ -44,6 +44,88 @@
     <asp:FormView ID="FormView1" runat="server" CssClass="cssformview" DataKeyNames="id" DataSourceID="SqlDataSource1" HorizontalAlign="Center">
         <EditItemTemplate>
             
+             <table>
+                <tr>
+                    <td style="text-align:right;">
+                        Team Name:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:TextBox ID="team_nametb" runat="server" Text='<%# Bind("team_name") %>'></asp:TextBox>
+                    </td>
+                </tr>
+                  <tr>
+                    <td style="text-align:right;">
+                        City:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:TextBox ID="citytb" runat="server" Text='<%# Bind("city") %>'></asp:TextBox>
+                    </td>
+                </tr>
+                  <tr>
+                    <td style="text-align:right;">
+                        State:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:TextBox ID="statetb" runat="server" Text='<%# Bind("state") %>'></asp:TextBox>
+                    </td>
+                </tr>
+                  <tr>
+                    <td style="text-align:right;">
+                        Year Established:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:TextBox ID="year_establishedtb" runat="server" Text='<%# Bind("year_established") %>'></asp:TextBox>
+                    </td>
+                </tr>
+                  <tr>
+                    <td style="text-align:right;">
+                        Field Name:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:TextBox ID="field_nametb" runat="server" Text='<%# Bind("field_name") %>'></asp:TextBox>
+                    </td>
+                </tr>
+                  <tr>
+                    <td style="text-align:right;">
+                        Head Coach:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:TextBox ID="head_coachtb" runat="server" Text='<%# Bind("head_coach") %>'></asp:TextBox>
+                    </td>
+                </tr>
+                  <tr>
+                    <td style="text-align:right;">
+                        Team Colors:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:TextBox ID="team_colorstb" runat="server" Text='<%# Bind("team_colors") %>'></asp:TextBox>
+                    </td>
+                </tr>
+                 <tr>
+                    <td style="text-align:right;">
+                        Superbowl Appearances:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:TextBox ID="superbowl_appearancestb" runat="server" Text='<%# Bind("superbowl_appearances") %>'></asp:TextBox>
+                    </td>
+                </tr>
+                 <tr>
+                    <td style="text-align:right;">
+                        Superbowl Wins:
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:TextBox ID="superbowl_winstb" runat="server" Text='<%# Bind("superbowl_wins") %>'></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">
+                       <asp:Button ID="btnUpdate" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                    </td>
+                    <td style="text-align:left;">
+                        <asp:Button ID="btnCancelUpdate" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                    </td>                  
+                </tr>
+            </table>
         </EditItemTemplate>
         <InsertItemTemplate>
            
