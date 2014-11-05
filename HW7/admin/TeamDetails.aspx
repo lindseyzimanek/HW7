@@ -41,7 +41,7 @@
         </UpdateParameters>
     </asp:SqlDataSource>
     <br />
-    <asp:FormView ID="FormView1" runat="server" DataKeyNames="id" DataSourceID="SqlDataSource1" HorizontalAlign="Center">
+    <asp:FormView ID="FormView1" runat="server" CssClass="cssformview" DataKeyNames="id" DataSourceID="SqlDataSource1" HorizontalAlign="Center">
         <EditItemTemplate>
             
         </EditItemTemplate>
