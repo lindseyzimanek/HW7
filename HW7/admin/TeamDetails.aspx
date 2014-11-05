@@ -6,6 +6,12 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+     <ul id="nav">
+        <li><asp:HyperLink ID="link_NewTeam" runat="server" NavigateUrl="~/admin/NewTeam.aspx">Add a New Team</asp:HyperLink></li>                       
+        <li><asp:HyperLink ID="link_ViewAllTeams" runat="server" NavigateUrl="~/admin/ViewAllTeams.aspx">View All Teams</asp:HyperLink></li>                
+    </ul>
+
     <!-- ADD DETAIL VIEW FORM HERE /-->
     <asp:Label ID="lblDeletedTeam" runat="server"></asp:Label>
 <br />
