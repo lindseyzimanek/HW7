@@ -1,6 +1,10 @@
 ﻿body { background-color: lightgrey;
   }
 
+#about {
+    text-align:center;
+}
+
 #top {
     border: 4px dashed black;
     text-align: center;
