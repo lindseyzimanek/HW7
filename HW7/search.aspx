@@ -8,17 +8,20 @@
     </p>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbo.lzimanek_hw7_nfl_teams %>" SelectCommand="SELECT * FROM [lzimanek_hw7_nfl_teams]"></asp:SqlDataSource>
     
-    <% If Not IsPostBack Then%>
-    Search for a team:
+    Enter search term:
     <asp:TextBox ID="tbSearch" runat="server" Width="188px"></asp:TextBox>
+    &nbsp;&nbsp;&nbsp;
+    <asp:Button ID="searchBtn" runat="server" Text="Search" />
+
+    <% If Not IsPostBack Then%>
+    
     <br />
+    <br />
+    <%Else%>    
+    
     <br />
 
-    <% Else%>
 
-    Search for another team:
-    <asp:TextBox ID="tbSearch2" runat="server" Width="162px"></asp:TextBox>
-    <br />
     <asp:GridView ID="GridView1" runat="server" CssClass="cssgridview" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1" Width="848px" HorizontalAlign="Center">
         <Columns>
             <asp:BoundField DataField="team_name" HeaderText="Team Name" SortExpression="team_name" />

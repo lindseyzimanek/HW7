@@ -50,34 +50,46 @@
             <table>
                 <tr>
                     <td style="text-align:right;">
-                        Team Name:
+                        *Team Name:
                     </td>
                     <td style="text-align:left;">
                         <asp:TextBox ID="team_nameTextBox" runat="server" Text='<%# Bind("team_name") %>' />
                     </td>
+                    <td style="text-align:left;">
+                        <asp:RequiredFieldValidator runat="server" ErrorMessage="Please enter the team name." CssClass="validationError" ControlToValidate="team_nameTextBox"></asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                   <tr>
                     <td style="text-align:right;">
-                        City:
+                        *City:
                     </td>
                     <td style="text-align:left;">
                         <asp:TextBox ID="cityTextBox" runat="server" Text='<%# Bind("city") %>' />
                     </td>
+                      <td style="text-align:left;">
+                          <asp:RequiredFieldValidator runat="server" ErrorMessage="Please enter the city of the team's field." CssClass="validationError" ControlToValidate="cityTextBox"></asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                   <tr>
                     <td style="text-align:right;">
-                        State:
+                        *State:
                     </td>
                     <td style="text-align:left;">
                         <asp:TextBox ID="stateTextBox" runat="server" Text='<%# Bind("state") %>' />
                     </td>
+                      <td style="text-align:left;">
+                          <asp:RequiredFieldValidator runat="server" ErrorMessage="Please enter the state of the team's field." CssClass="validationError" ControlToValidate="stateTextBox"></asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                   <tr>
                     <td style="text-align:right;">
-                        Year Established:
+                        *Year Established:
                     </td>
                     <td style="text-align:left;">
                         <asp:TextBox ID="year_establishedTextBox" runat="server" Text='<%# Bind("year_established") %>' />
+                    </td>
+                      <td style="text-align:left;">
+                          <asp:RequiredFieldValidator runat="server" ErrorMessage="Please enter the year of establishment." CssClass="validationError" ControlToValidate="year_establishedTextBox"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                   <tr>
@@ -87,6 +99,9 @@
                     <td style="text-align:left;">
                         <asp:TextBox ID="field_nameTextBox" runat="server" Text='<%# Bind("field_name") %>' />
                     </td>
+                      <td style="text-align:left;">
+
+                    </td>
                 </tr>
                   <tr>
                     <td style="text-align:right;">
@@ -94,6 +109,9 @@
                     </td>
                     <td style="text-align:left;">
                         <asp:TextBox ID="head_coachTextBox" runat="server" Text='<%# Bind("head_coach") %>' />
+                    </td>
+                      <td style="text-align:left;">
+
                     </td>
                 </tr>
                   <tr>
@@ -103,6 +121,9 @@
                     <td style="text-align:left;">
                         <asp:TextBox ID="team_colorsTextBox" runat="server" Text='<%# Bind("team_colors") %>' />
                     </td>
+                      <td style="text-align:left;">
+
+                    </td>
                 </tr>
                  <tr>
                     <td style="text-align:right;">
@@ -111,6 +132,9 @@
                     <td style="text-align:left;">
                         <asp:TextBox ID="superbowl_appearancesTextBox" runat="server" Text='<%# Bind("superbowl_appearances") %>' />
                     </td>
+                     <td style="text-align:left;">
+
+                    </td>
                 </tr>
                  <tr>
                     <td style="text-align:right;">
@@ -118,6 +142,9 @@
                     </td>
                     <td style="text-align:left;">
                         <asp:TextBox ID="superbowl_winsTextBox" runat="server" Text='<%# Bind("superbowl_wins") %>' />
+                    </td>
+                     <td style="text-align:left;">
+
                     </td>
                 </tr>
                 <tr>
