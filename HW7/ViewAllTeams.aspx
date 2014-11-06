@@ -36,7 +36,7 @@
         </UpdateParameters>
     </asp:SqlDataSource>
     <br />
-    <asp:GridView ID="GridView1" runat="server" CssClass="cssgridview" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1" HorizontalAlign="Center" Width="478px">
+    <asp:GridView ID="GridView1" runat="server" CssClass="cssgridview" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1" HorizontalAlign="Center" Width="478px" AllowSorting="True">
         <Columns>
             <asp:BoundField DataField="team_name" HeaderText="Team Name" SortExpression="team_name" />
             <asp:BoundField DataField="city" HeaderText="City" SortExpression="city" />
